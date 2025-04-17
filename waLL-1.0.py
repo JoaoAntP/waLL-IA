@@ -10,7 +10,8 @@
 
 
 nome_usuario = input("Qual seu nome ?")
-codigo_usario = "1"
+acesso_usuario = input("Qual seu codigo de acesso ?")
+codigo_usario = acesso_usuario
 print("""
 1-Adulto
 2-Criança
@@ -68,7 +69,7 @@ elif modo_comuni == "1":
         """)
     else:
         print("Escolha de uma opções acima")
-else:
+elif modo_comuni == "3":
     print("Seja Bem Vindx Senhora(o) {}".format(nome_usuario))
     print("Seja Bem Vindx {}".format(nome_usuario))
     print("Seja bem vindo {} qual e sua necessidade".format(nome_usuario))
@@ -93,3 +94,5 @@ else:
         Quinta|17:00-20:25|Sessão de Cinema""")
     else:
         print("Escolha de uma opções acima")
+else:
+    print("Erro")
